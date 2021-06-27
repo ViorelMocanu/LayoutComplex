@@ -57,7 +57,9 @@ a:hover { color: #000; }
 		.SearchForm { flex-grow: 1; padding: 0.1875rem; }
 			.Fieldset { display: block; padding: 0; border: none; position: relative; }
 				.Legend {  }
-					.Label { display: block; }
+					.Label { display: block; cursor: pointer;
+						&:hover { color:#799900; }
+					}
 						.SearchLabel {}
 							.SearchLabelText {}
 							.Input { display: block; width: 100%; height: 2.375rem; padding: 0 0.5em; line-height: 2rem; border: 1px solid #777; border-radius: 1em; outline: none; }
@@ -126,41 +128,74 @@ a:hover { color: #000; }
 			}
 				.MainFeature img { display: block; }
 					.MainFeatureParagraph { display: block; margin: 1rem; }
-		.BookGrid { display: block; padding: 1rem 0; background: #f8f8f8; }
+		.BookGrid { display: block; padding: 1rem 0; background: rgba(166,177,126,.14); }
 			.BookGridTitle { display: block; margin: 1rem; font-size: 2rem; line-height: 1em; }
 			.BookGridList { display: block; margin: 0; padding: 0; list-style-type: none;
 				@media (min-width: 650px) { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
 			}
-				.BookGridItem { display: block; clear: both; }
+				.BookGridItem { display: block; clear: both; position: relative; margin: 1rem 0; padding: 0 0 1rem 0; border-bottom: 1px solid #ddd;
+					@media (min-width: 650px) { margin: 0; padding: 0; border-bottom: none; }
+				}
 					.BookGridLink { display: block; padding: 0 1rem; color: #333; text-decoration: none;
-						@media (min-width: 650px) { margin: 1rem; position: relative; background: white; box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1); }
+						@media (min-width: 650px) { margin: 1rem; position: relative; background: white; border-bottom: 2rem solid #eee; box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1); }
+						&:hover { box-shadow: 0 0.5em 0.5em rgba(121, 153, 0, 0.5); }
 					}
-						.BookGridThumbnail { display: block; width: 100%; height: auto;
+						.BookGridThumbnail { display: block; width: 100%; height: auto; margin-bottom: 1rem;
 							@media (min-width: 380px) { float: left; width: 33%; height: auto; margin: 0.5rem 0.5rem 0 0; }
 							@media (min-width: 580px) { width: 11rem; height: auto; }
 							@media (min-width: 650px) { width: 100%; height: auto; max-width: 300px; margin: 1rem auto; }
 						}
-						.BookTitle { display: block; margin: 0.25rem 0; }
-						.BookAuthor { display: block; margin: 0.25rem 0; }
+						.BookTitle { display: block; margin: 0.25rem 0; font-size: 1rem; line-height: 1.5em; }
+						.BookAuthor { display: block; margin: 0.25rem 0; font-weight: normal; text-transform: uppercase; font-size: 1rem; line-height: 1.5em; color: #799900; }
 						.BookDescription { display: block; margin: 0.25rem 0;
 							@media (min-width: 480px) { overflow: hidden; }
 							@media (min-width: 650px) { display: none; }
 						}
-						.Price { display: block; padding: 0.25rem 0.5rem; background: #fff; clear: both;
-							@media (min-width: 650px) { position: absolute; bottom: 0; right: 0; }
+						.Price { display: block; padding: 0.25rem 0.5rem; background: #fff; clear: both; font-size: 1.5rem; line-height: 1em; text-align: right;
+							@media (min-width: 650px) { position: absolute; bottom: -2rem; right: 0; background: transparent; text-align: left; }
 						}
-							.Price span span { display: inline-block; position: relative; top: -2px; font-size: 0.75rem; border-bottom: 3px solid #eee; line-height: 1em; position: relative; top: -2px; }
-						.Availability {  }
-							.AvailabilityInStock {  }
-								.AvailableTag {  }
-								.AvailableDuration { display: none;
+								.Price span span { display: inline-block; margin: 0 -0.25em; position: relative; top: -0.25em; font-size: 0.6666em; border-bottom: 3px solid #eee; line-height: 1em; }
+						.Availability { display: flex; position: absolute; margin-top: -2rem;
+							@media (min-width: 650px) { left: 0; bottom: -2rem; margin-top: 0; }
+						}
+								.AvailableTag { display: block; background: #f4bb3a; padding: 0.3333em 0.5em; text-transform: uppercase; font-size: 0.75rem;
+									.AvailabilityLimited & { background: #e81c24; color: white; }
+									.AvailabilityUnavailable & { background: #555; color: white; }
+									.AvailabilityPreorder & { background: #53acb4; color: white; }
+								}
+								.AvailableDuration { display: none; padding: 0.25em; font-size: 0.75rem;
 									.AvailabilityInStock & { display: block; }
 								}
-						.Discount { display: none;
+						.Discount { display: none; position: absolute; right: 0; top: 0.5rem; padding: 0.25em 0.5em; background: #ff6e40; color: #fff;
 							.Discounted & { display: block; }
+							@media (min-width: 650px) { right: -0.5rem; }
 						}
 
-	.Footer {  }
+	.Footer { display: block; background: #eee; border-top: 1px solid #ddd; }
+		.FooterContainer { max-width: 86rem; margin: auto; }
+			.FooterSection {  }
+				.FooterTitle {  }
+				.FooterParagraph {
+					.FooterCopy & { }
+				}
+				.FooterLinksList {
+					.FooterCopy & { }
+				}
+					.FooterLinksItem {  }
+						.FooterLink {  }
+				.FooterSocialList { display: flex; list-style-type: none; margin: 0; padding: 0; }
+					.FooterSocialItem { display: block; margin: 0 1rem 0 0; }
+						.FooterSocialLink { display: block; padding: 0.25rem; background: #ccc; border-radius: 0.25rem;
+							&:hover { background: #799900; }
+						}
+							.FooterSocialLink svg { display: block; width: 2.25rem; height: 2.25rem;
+								& * { fill: white; }
+							}
+				.FooterNewsletterForm {  }
+					.NewsletterLabel {  }
+						.NewsletterLabelText {  }
+						.NewsletterInput {  }
+					.NewsletterSubmit {  }
 
 /**********************************/
 
