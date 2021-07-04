@@ -42,3 +42,8 @@ $sliderPickerList.querySelectorAll('.SliderPickerLink').forEach((el, index) => {
 		selectSlide(position);
 	}, true);
 });
+
+/* instanțierea service worker-ului */
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('service-worker.js');
+}

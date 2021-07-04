@@ -1,7 +1,7 @@
 {
-	"name": "ViorelMocanu Links",
-	"short_name": "ViorelMocanu.ro",
-	"description": "Toate link-urile mele. Profilurile de social media plus grupurile pe care sunt activ și unde răspund la întrebări.",
+	"name": "ViorelMocanu Layout Complex",
+	"short_name": "Layout Complex",
+	"description": "Proiect demonstrativ care urmărește crearea unui layout complex în HTML și CSS cu model de design homepage-ul Cărturești.ro",
 	"icons": [
 		{
 			"src": "./favicon-192.png",
