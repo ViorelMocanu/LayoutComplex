@@ -38,6 +38,15 @@ a:hover { color: #000; }
 	&:hover { background: #000; color: #fff; }
 }
 
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 /**********************************/
 
 .Container {  }
@@ -85,7 +94,7 @@ a:hover { color: #000; }
 		.Slider { display: block; position: relative; max-width: 86rem; margin: 0 auto; }
 			.SliderList { display: block; margin: 0 0 4.5rem; padding: 0; position: relative; }
 				.SliderItem { display: none;
-					&.Active { display: block; }
+					&.Active { display: block; animation: fadeIn 0.5s ease-in-out both; }
 				}
 					.SliderLink { display: block; }
 						.SliderImage { display: block; }
@@ -104,7 +113,7 @@ a:hover { color: #000; }
 					}
 						.SliderArrowImage { display: block; width: clamp(1.5rem, 5vw, 4rem); height: auto; }
 						.SliderPrev .SliderArrowImage { transform: rotate(180deg); }
-				.SliderPicker { display: flex; flex-direction: row; flex-wrap: nowrap; max-width: 100vw; overflow: auto; padding: 0 0 0 0.5rem; margin: 0; position: absolute; bottom: -4rem; list-style: none;
+				.SliderPicker { display: flex; flex-direction: row; flex-wrap: nowrap; max-width: calc(100vw - 20px); overflow: auto; padding: 0 0 0 0.5rem; margin: 0; position: absolute; bottom: -4rem; list-style: none;
 					@media (min-width: 750px) { width: 100%; justify-content: center; }
 				}
 					.SliderPickerItem { display: block; margin: 0.5rem 2px 0.5rem 0; }
@@ -171,31 +180,71 @@ a:hover { color: #000; }
 							@media (min-width: 650px) { right: -0.5rem; }
 						}
 
-	.Footer { display: block; background: #eee; border-top: 1px solid #ddd; }
-		.FooterContainer { max-width: 86rem; margin: auto; }
-			.FooterSection {  }
-				.FooterTitle {  }
-				.FooterParagraph {
-					.FooterCopy & { }
+	.Footer { display: block; padding-bottom: 1px; background: #eee; border-top: 1px solid #ddd; }
+		.FooterContainer { max-width: 86rem; margin: auto;
+			@media (min-width: 820px) { display: grid; grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: auto; grid-template-areas: "links misc newsletter" "contact payment security" "copyright copyright copyright";
+			}
+			@media (min-width: 1080px) { column-gap: clamp(2rem, 3vw, 4rem); row-gap: 1em; }
+		}
+			.FooterSection { display: block; }
+			.FooterLinks { grid-area: links;
+				@media (min-width: 500px) { float: left; width: 50%; }
+				@media (min-width: 820px) { float: none; width: auto; grid-area: links; }
+			}
+			.FooterMisc { grid-area: misc;
+				@media (min-width: 500px) { overflow: hidden; }
+			}
+			.FooterNewsletter { clear: both; grid-area: newsletter;
+				@media (min-width: 500px) { padding-top: 1px; }
+				@media (min-width: 820px) { padding-top: 0; }
+			}
+			.FooterContact { grid-area: contact; }
+			.FooterPayment { grid-area: payment; }
+			.FooterSecurity { grid-area: security; }
+			.FooterCopy { grid-area: copyright;
+				@media (min-width: 700px) { display: flex; flex-direction: row; border-top: 1px solid #ddd; }
+			}
+				.FooterTitle { display: block; margin: 2em 0 1em; padding: 0 1em; font-size: 1rem;
+					@media (min-width: 1100px) { font-size: 1.5em; line-height: 1em; margin: 1.3333em 0 0.6666em; padding: 0 0.6666em; }
 				}
-				.FooterLinksList {
-					.FooterCopy & { }
+				.FooterParagraph { display: block; padding: 0 1em;
+					.FooterCopy & {
+						@media (min-width: 700px) { font-size: 0.75rem; line-height: 1.5em; }
+						@media (min-width: 990px) { width: 100%; text-align: right; }
+					}
 				}
-					.FooterLinksItem {  }
-						.FooterLink {  }
-				.FooterSocialList { display: flex; list-style-type: none; margin: 0; padding: 0; }
-					.FooterSocialItem { display: block; margin: 0 1rem 0 0; }
+				.FooterLinksList { display: block; list-style-type: none; margin: 0; padding: 0;
+					.FooterCopy & {
+						@media (min-width: 700px) { display: flex; flex-direction: row; font-size: 0.75rem; line-height: 1.5em; }
+						@media (min-width: 990px) { width: 33.3333%; }
+					}
+				}
+					.FooterLinksItem { display: block; }
+						.FooterLink { display: block; position: relative; border-top: 1px solid #fff; border-bottom: 1px solid #ddd; padding: 0.5em 1em; text-transform: uppercase; text-decoration: none; color: #555;
+							&:after { content: '\203A'; display: block; padding: 0.25em; position: absolute; right: 0; top: 0; font-size: 2em; line-height: 0.5em; }
+							&:hover { background: #ddd; color: #000; }
+							.FooterCopy & {
+								@media (min-width: 700px) { padding: 1em; border: none; color: #799900; text-transform: none; white-space: nowrap;
+									&:after { display: none; }
+								}
+							}
+						}
+				.FooterSocialList { display: flex; flex-wrap: wrap; list-style-type: none; margin: 0; padding: 0 1em; }
+					.FooterSocialItem { display: block; margin: 0 1rem 1rem 0; }
 						.FooterSocialLink { display: block; padding: 0.25rem; background: #ccc; border-radius: 0.25rem;
 							&:hover { background: #799900; }
 						}
 							.FooterSocialLink svg { display: block; width: 2.25rem; height: 2.25rem;
 								& * { fill: white; }
 							}
-				.FooterNewsletterForm {  }
-					.NewsletterLabel {  }
+				.FooterNewsletterForm { display: block; padding: 0 1em; }
+					.NewsletterLabel { display: block; padding: 0 0 1em; }
 						.NewsletterLabelText {  }
 						.NewsletterInput {  }
-					.NewsletterSubmit {  }
+					.NewsletterSubmit { display: block; width: 100%; padding: 1em; background: #799900; color: #fff; border: none; font-weight: bold; text-transform: uppercase; cursor: pointer; border-radius: 1em;
+						&:hover { background: #000; color: #fff; }
+					}
 
 /**********************************/
 

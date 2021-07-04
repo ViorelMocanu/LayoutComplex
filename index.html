@@ -7,25 +7,24 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
 		<!-- SEO -->
-		<title>Proiect de layout complex</title>
+		<title>Proiect de layout complex - Cărturești Homepage</title>
 		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="description" content="@TODO" />
-		<link rel="canonical" href="@TODO" />
-		<meta property="og:title" content="@TODO" />
-		<meta property="og:description" content="@TODO" />
-		<meta property="og:site_name" content="@TODO" />
+		<meta name="description" content="Proiect demonstrativ care urmărește crearea unui layout complex în HTML și CSS cu model de design homepage-ul Cărturești.ro" />
+		<link rel="canonical" href="https://viorelmocanu.github.io/LayoutComplex/" />
+		<meta property="og:title" content="Proiect de layout complex - Cărturești Homepage" />
+		<meta property="og:description" content="Proiect demonstrativ care urmărește crearea unui layout complex în HTML și CSS cu model de design homepage-ul Cărturești.ro" />
+		<meta property="og:site_name" content="Layout Complex" />
 		<meta property="og:type" content="website" />
 		<meta property="og:locale" content="ro_RO" />
-		<meta property="og:url" content="@TODO" />
+		<meta property="og:url" content="https://viorelmocanu.github.io/LayoutComplex/" />
 		<meta property="og:image" content="./og-image.jpg" />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
-		<meta property="og:image:alt" content="@TODO" />
+		<meta property="og:image:alt" content="Design-ul site-ului Cărturești, refăcut complet de la zero în HTML și CSS." />
 		<meta property="article:publisher" content="https://www.facebook.com/ViorelMocanu.ro/" />
-		<meta property="article:section" content="@TODO" />
-		<meta property="article:published_time" content="2021-06-13T23:27:55+03:00" />
-		<meta property="article:modified_time" content="2021-06-13T23:27:57+03:00" />
+		<meta property="article:published_time" content="2021-07-04T23:27:55+03:00" />
+		<meta property="article:modified_time" content="2021-07-04T23:27:57+03:00" />
 		<meta name="twitter:site" content="@ViorelMocanu" />
 		<meta name="twitter:creator" content="@ViorelMocanu" />
 		<meta name="twitter:card" content="summary_large_image" />
@@ -40,8 +39,8 @@
 		<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#4f6df5" />
 		<meta name="msapplication-TileColor" content="#ffffff" />
 		<link rel="manifest" href="./my.webmanifest" />
-		<meta name="apple-mobile-web-app-title" content="@TODO" />
-		<meta name="application-name" content="@TODO" />
+		<meta name="apple-mobile-web-app-title" content="Proiect de layout complex" />
+		<meta name="application-name" content="Layout Complex" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 		<meta name="mobile-web-app-capable" content="yes" />
@@ -53,7 +52,8 @@
 			document.documentElement.classList.remove('no-js');
 			document.documentElement.classList.add('js');
 		</script>
-		<link rel="preload" href="@TODO" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="https://viorelmocanu.github.io/LayoutComplex/resources/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="https://viorelmocanu.github.io/LayoutComplex/resources/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin />
 	</head>
 
 	<body>
@@ -126,102 +126,16 @@
 				</nav>
 			</header>
 			<main class="Main">
-				<!-- @TODO - folosește structured data -->
 				<section class="Slider">
 					<nav class="SliderControls">
-						<a class="SliderArrows SliderPrev" href="#" title="Revino la imaginea precedentă">
+						<a id="previousSlide" class="SliderArrows SliderPrev" href="#" title="Revino la imaginea precedentă">
 							<img src="resources/icon-arrow.svg" class="SliderArrowImage" alt="Imaginea precedentă" width="48" height="82" />
 						</a>
-						<a class="SliderArrows SliderNext" href="#" title="Mergi la imaginea următoare">
+						<a id="nextSlide" class="SliderArrows SliderNext" href="#" title="Mergi la imaginea următoare">
 							<img src="resources/icon-arrow.svg" class="SliderArrowImage" alt="Imaginea precedentă" width="48" height="82" />
 						</a>
-						<ol class="SliderPicker">
+						<ol id="sliderPicker" class="SliderPicker">
 							<li class="SliderPickerItem Active">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
-								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
-									<span class="SliderPickerText">Imaginea @TODO</span>
-								</a>
-							</li>
-							<li class="SliderPickerItem">
 								<a class="SliderPickerLink" href="#" title="Mergi la imaginea cu numărul @TODO">
 									<span class="SliderPickerText">Imaginea @TODO</span>
 								</a>
@@ -238,7 +152,7 @@
 							</li>
 						</ol>
 					</nav>
-					<ol class="SliderList">
+					<ol id="sliderList" class="SliderList">
 						<li class="SliderItem Active">
 							<a href="#" class="SliderLink" title="Vezi articolul despre @TODO">
 								<picture class="SliderImage">
@@ -251,9 +165,18 @@
 						<li class="SliderItem">
 							<a href="#" class="SliderLink" title="Vezi articolul despre @TODO">
 								<picture class="SliderImage">
-									<source type="image/webp" srcset="./images/slider-img-1.webp" media="(min-width: 750px)" />
-									<source type="image/webp" srcset="./images/slider-img-1-mobile.webp" media="(min-width: 100px)" />
-									<img src="./images/slider-img-1-mobile.png" alt="Imagine despre @TODO" width="525" height="300" itemprop="image" />
+									<source type="image/webp" srcset="./images/slider-img-2.webp" media="(min-width: 750px)" />
+									<source type="image/webp" srcset="./images/slider-img-2-mobile.webp" media="(min-width: 100px)" />
+									<img src="./images/slider-img-2-mobile.jpg" alt="Imagine despre @TODO" width="525" height="300" itemprop="image" />
+								</picture>
+							</a>
+						</li>
+						<li class="SliderItem">
+							<a href="#" class="SliderLink" title="Vezi articolul despre @TODO">
+								<picture class="SliderImage">
+									<source type="image/webp" srcset="./images/slider-img-3.webp" media="(min-width: 750px)" />
+									<source type="image/webp" srcset="./images/slider-img-3-mobile.webp" media="(min-width: 100px)" />
+									<img src="./images/slider-img-3-mobile.jpg" alt="Imagine despre @TODO" width="525" height="300" itemprop="image" />
 								</picture>
 							</a>
 						</li>
@@ -287,407 +210,125 @@
 					</div>
 				</section>
 				<section class="BookGrid">
-					<!-- @TODO - folosește structured data -->
 					<h2 class="BookGridTitle">Precomenzi</h2>
 					<ol class="BookGridList">
-						<li class="BookGridItem Discounted AvailabilityInStock">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
+						<li class="BookGridItem Discounted AvailabilityInStock" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO" itemprop="url">
+								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" itemprop="image" />
+								<h3 class="BookTitle" itemprop="name">Information Architecture, 4e</h3>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span>
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span>lei</span>
 									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">În stoc</span>
-									<span class="AvailableDuration" title="Dacă faci astăzi comandă, vei avea cartea în 24h"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/InStock" />
+										<span class="AvailableTag">În stoc</span>
+										<span class="AvailableDuration" title="Dacă faci astăzi comandă, vei avea cartea în 24h"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
 							</a>
 						</li>
-						<li class="BookGridItem AvailabilityPreorder">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
+						<li class="BookGridItem AvailabilityPreorder" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO" itemprop="url">
+								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" itemprop="image" />
 								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span>
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span>lei</span>
 									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">Precomandă</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/BackOrder" />
+										<span class="AvailableTag">Precomandă</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
 							</a>
 						</li>
-						<li class="BookGridItem AvailabilityLimited">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
+						<li class="BookGridItem AvailabilityLimited" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO" itemprop="url">
+								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" itemprop="image" />
 								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span>
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span>lei</span>
 									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag"><span class="ScreenReader">Stoc </span>Limitat</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/LimitedAvailability" />
+										<span class="AvailableTag"><span class="ScreenReader">Stoc </span>Limitat</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
 							</a>
 						</li>
-						<li class="BookGridItem AvailabilityUnavailable">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
+						<li class="BookGridItem AvailabilityUnavailable" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO" itemprop="url">
+								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" itemprop="image" />
 								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span>
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span>lei</span>
 									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">Indisponibil</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
+									<span class="Availability">
+										<link itemprop="availability" href="https://schema.org/OutOfStock" />
+										<span class="AvailableTag">Indisponibil</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
+									</span>
+									<span class="Discount">-10%</span>
+								</div>
 							</a>
 						</li>
-						<li class="BookGridItem Discounted AvailabilityInStock">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
+						<li class="BookGridItem Discounted AvailabilityInStock" itemscope itemtype="https://schema.org/Book">
+							<link itemprop="additionalType" href="https://schema.org/Product" />
+							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO" itemprop="url">
+								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" itemprop="image" />
 								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
+								<h4 class="BookAuthor" itemprop="author">Louis Rosenfeld & co.</h4>
+								<p class="BookDescription" itemprop="description">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
+								<div class="Offer" itemscope itemtype="https://schema.org/Offer">
+									<span class="Price">
+										<span>
+											<strong>52</strong>
+											<span>.00</span>
+										</span>
+										<span>lei</span>
 									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">În stoc</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
-							</a>
-						</li>
-						<li class="BookGridItem Discounted AvailabilityInStock">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
+									<span class="Availability">
+										<span class="AvailableTag">În stoc</span>
+										<span class="AvailableDuration"><strong>24</strong>h</span>
 									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">În stoc</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
-							</a>
-						</li>
-						<li class="BookGridItem AvailabilityInStock">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
-									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">În stoc</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
-							</a>
-						</li>
-						<li class="BookGridItem Discounted AvailabilityInStock">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
-									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">În stoc</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
-							</a>
-						</li>
-						<li class="BookGridItem Discounted AvailabilityInStock">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
-									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">În stoc</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
-							</a>
-						</li>
-						<li class="BookGridItem Discounted AvailabilityInStock">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
-									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">În stoc</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
-							</a>
-						</li>
-						<li class="BookGridItem Discounted AvailabilityInStock">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
-									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">În stoc</span>
-									<span class="AvailableDuration" title="Dacă faci astăzi comandă, vei avea cartea în 24h"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
-							</a>
-						</li>
-						<li class="BookGridItem AvailabilityPreorder">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
-									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">Precomandă</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
-							</a>
-						</li>
-						<li class="BookGridItem AvailabilityLimited">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
-									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag"><span class="Hidden">Stoc </span>Limitat</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
-							</a>
-						</li>
-						<li class="BookGridItem AvailabilityUnavailable">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
-									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">Indisponibil</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
-							</a>
-						</li>
-						<li class="BookGridItem Discounted AvailabilityInStock">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
-									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">În stoc</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
-							</a>
-						</li>
-						<li class="BookGridItem Discounted AvailabilityInStock">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
-									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">În stoc</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
-							</a>
-						</li>
-						<li class="BookGridItem AvailabilityInStock">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
-									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">În stoc</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
-							</a>
-						</li>
-						<li class="BookGridItem Discounted AvailabilityInStock">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
-									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">În stoc</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
-							</a>
-						</li>
-						<li class="BookGridItem Discounted AvailabilityInStock">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
-									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">În stoc</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
-							</a>
-						</li>
-						<li class="BookGridItem Discounted AvailabilityInStock">
-							<a class="BookGridLink" href="#" title="Vezi pagina cu detalii pentru cartea @TODO">
-								<img class="BookGridThumbnail" src="images/carte.webp" width="300" height="451" alt="Coperta cărții @TODO" />
-								<h3 class="BookTitle">Information Architecture, 4e</h3>
-								<h4 class="BookAuthor">Louis Rosenfeld & co.</h4>
-								<p class="BookDescription">To guide you through this broad ecosystem, this popular guide provides essential concepts, methods, and techniques for digital design that have withstood the test of time. UX designers, product managers, developers, and anyone involved in digital design will learn how to create semantic structures that will help people engage with your message.</p>
-								<span class="Price">
-									<span>
-										<strong>52</strong>
-										<span>.00</span>
-									</span>
-									<span>lei</span>
-								</span>
-								<span class="Availability">
-									<span class="AvailableTag">În stoc</span>
-									<span class="AvailableDuration"><strong>24</strong>h</span>
-								</span>
-								<span class="Discount">-10%</span>
+									<span class="Discount">-10%</span>
+								</div>
 							</a>
 						</li>
 					</ol>
@@ -785,7 +426,7 @@
 									<input class="Input NewsletterInput" placeholder="Introdu numele tău..." type="text" maxlength="200" id="newsletter-lastname" name="newsletter-lastname" />
 								</label>
 								<button class="SubmitButton NewsletterSubmit" type="submit">
-									<span>Abonare</span>
+									<span>Abonează-te acum &raquo;</span>
 								</button>
 							</fieldset>
 						</form>
@@ -817,7 +458,7 @@
 								<a class="FooterLink" href="#" title="@TODO">ANPC</a>
 							</li>
 						</ul>
-						<p class="FooterParagraph">© Carturesti 2021 | ® Conținut cu drepturi protejate</p>
+						<p class="FooterParagraph">© Carturesti 2021 | ® Conținut cu drepturi protejate<br /> Acest proiect are pur scop educațional și nu este menit să aducă vreun detriment brand-ului Cărturești sau site-ului <a href="https://www.carturesti.ro">Cărturești.ro</a>.</p>
 					</section>
 				</div>
 			</footer>
