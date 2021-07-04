@@ -29,12 +29,12 @@ input, button, textarea, select { font: inherit; }
 
 strong { font-weight: 900; }
 
-a { color: #799900; }
+a { color: #627500; }
 a:hover { color: #000; }
 
 .ScreenReaders { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0);white-space: nowrap; border-width: 0; }
 
-.Button { display: block; padding: 0.5em 1em; background: #799900; color: #fff; font-weight: normal; text-transform: uppercase; text-decoration: none; text-align: center; border-radius: 0.5em;
+.Button { display: block; padding: 0.5em 1em; background: #627500; color: #fff; font-weight: normal; text-transform: uppercase; text-decoration: none; text-align: center; border-radius: 0.5em;
 	&:hover { background: #000; color: #fff; }
 }
 
@@ -51,7 +51,7 @@ a:hover { color: #000; }
 
 .Container {  }
 	.Header { display: flex; height: 2.75rem; position: sticky; top: 0; background: white; box-shadow: 0 1em 1em rgba(0,0,0,0.1); z-index: 2; }
-		.Logo { display: block; height: 3.75rem; position: relative; z-index: 1; background: #799900; box-shadow: 0 0.5em 0.5em rgba(0,0,0,0.1); }
+		.Logo { display: block; height: 3.75rem; position: relative; z-index: 1; background: #627500; box-shadow: 0 0.5em 0.5em rgba(0,0,0,0.1); }
 			.LogoImage { display: block; width: 3.75rem; height: 3.75rem; }
 		.TriggerButton { display: block; padding: 0.375rem; margin: 0; background: transparent; border: none; appearance: none; cursor: pointer;
 			&:hover { background: #eee; }
@@ -67,7 +67,7 @@ a:hover { color: #000; }
 			.Fieldset { display: block; padding: 0; border: none; position: relative; }
 				.Legend {  }
 					.Label { display: block; cursor: pointer;
-						&:hover { color:#799900; }
+						&:hover { color:#627500; }
 					}
 						.SearchLabel {}
 							.SearchLabelText {}
@@ -83,12 +83,12 @@ a:hover { color: #000; }
 			.MainMenuList { display: block; padding: 0; margin: 0; }
 				.MainMenuItem { display: block; }
 					.MainMenuLink { display: block; padding: 0.5em 1em; color: #222; background: transparent; font-size: 1.5em; font-weight: 700; text-decoration: none;
-						&:hover { color: #799900; background: white; }
+						&:hover { color: #627500; background: white; }
 					}
 					.MainMenuSublist { display: block; padding: 0; margin: 0; }
 						.MainMenuSubitem { display: block; }
 							.MainMenuSublink { display: block; padding: 0.75em 1.5em; color: #222; background: transparent; text-decoration: none;
-								&:hover { color: #799900; background: white; }
+								&:hover { color: #627500; background: white; }
 							}
 	.Main {  }
 		.Slider { display: block; position: relative; max-width: 86rem; margin: 0 auto; }
@@ -117,9 +117,9 @@ a:hover { color: #000; }
 					@media (min-width: 750px) { width: 100%; justify-content: center; }
 				}
 					.SliderPickerItem { display: block; margin: 0.5rem 2px 0.5rem 0; }
-						.SliderPickerLink { display: block; width: 2em; height: 2em; background: #fff; border: 2px solid #8fb300; border-radius: 50%;
-							&:hover { border-color: #000; background: #8fb300; }
-							.Active & { background: #8fb300; }
+						.SliderPickerLink { display: block; width: 2em; height: 2em; background: #fff; border: 2px solid #627500; border-radius: 50%;
+							&:hover { border-color: #000; background: #627500; }
+							.Active & { background: #627500; }
 							.Active &:hover { background: #000; }
 						}
 							.SliderPickerText { display: block; width: 0; white-space: nowrap; overflow: hidden; }
@@ -155,7 +155,7 @@ a:hover { color: #000; }
 							@media (min-width: 650px) { width: 100%; height: auto; max-width: 300px; margin: 1rem auto; }
 						}
 						.BookTitle { display: block; margin: 0.25rem 0; font-size: 1rem; line-height: 1.5em; }
-						.BookAuthor { display: block; margin: 0.25rem 0; font-weight: normal; text-transform: uppercase; font-size: 1rem; line-height: 1.5em; color: #799900; }
+						.BookAuthor { display: block; margin: 0.25rem 0; font-weight: normal; text-transform: uppercase; font-size: 1rem; line-height: 1.5em; color: #627500; }
 						.BookDescription { display: block; margin: 0.25rem 0;
 							@media (min-width: 480px) { overflow: hidden; }
 							@media (min-width: 650px) { display: none; }
@@ -225,7 +225,7 @@ a:hover { color: #000; }
 							&:after { content: '\203A'; display: block; padding: 0.25em; position: absolute; right: 0; top: 0; font-size: 2em; line-height: 0.5em; }
 							&:hover { background: #ddd; color: #000; }
 							.FooterCopy & {
-								@media (min-width: 700px) { padding: 1em; border: none; color: #799900; text-transform: none; white-space: nowrap;
+								@media (min-width: 700px) { padding: 1em; border: none; color: #627500; text-transform: none; white-space: nowrap;
 									&:after { display: none; }
 								}
 							}
@@ -233,7 +233,7 @@ a:hover { color: #000; }
 				.FooterSocialList { display: flex; flex-wrap: wrap; list-style-type: none; margin: 0; padding: 0 1em; }
 					.FooterSocialItem { display: block; margin: 0 1rem 1rem 0; }
 						.FooterSocialLink { display: block; padding: 0.25rem; background: #ccc; border-radius: 0.25rem;
-							&:hover { background: #799900; }
+							&:hover { background: #627500; }
 						}
 							.FooterSocialLink svg { display: block; width: 2.25rem; height: 2.25rem;
 								& * { fill: white; }
@@ -242,7 +242,7 @@ a:hover { color: #000; }
 					.NewsletterLabel { display: block; padding: 0 0 1em; }
 						.NewsletterLabelText {  }
 						.NewsletterInput {  }
-					.NewsletterSubmit { display: block; width: 100%; padding: 1em; background: #799900; color: #fff; border: none; font-weight: bold; text-transform: uppercase; cursor: pointer; border-radius: 1em;
+					.NewsletterSubmit { display: block; width: 100%; padding: 1em; background: #627500; color: #fff; border: none; font-weight: bold; text-transform: uppercase; cursor: pointer; border-radius: 1em;
 						&:hover { background: #000; color: #fff; }
 					}
 
