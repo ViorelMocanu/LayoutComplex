@@ -6,7 +6,7 @@ Un proiect în care construim un layout complex în HTML și CSS. Deployat live 
 
 Proiect pornit de pe [canalul meu de YouTube](https://www.youtube.com/ViorelMocanu) într-o serie de LIVE-uri în care am vrut să demonstrez cum facem un layout relativ complex, 100% mobile-first și responsive, în HTML și CSS și puțin JavaScript vanilla.
 
-Episoadele în care am construit acest layout de la zero:
+Episoadele în care am construit acest layout de la zero ([playlist-ul complet e aici](https://www.youtube.com/playlist?list=PLfTqvIG4roBrP63BDGSXEKvf7iThHSKgM)):
 
 1. [🔴LIVE - Workshop 4 - Secrete de layout în CSS - mobile first responsive web design](https://www.youtube.com/watch?v=QyQjWqIOAc4)
 2. [🔴LIVE - Workshop 5 - Layout complex în CSS - mobile first responsive web design](https://www.youtube.com/watch?v=Pv7h2pCHkqM)
