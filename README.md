@@ -2,7 +2,7 @@
 
 Un proiect în care construim un layout complex în HTML și CSS. Deployat live prin GitHub Pages aici:
 
-## <https://viorelmocanu.github.io/LayoutComplex/>
+## https://viorelmocanu.github.io/LayoutComplex/
 
 Proiect pornit de pe [canalul meu de YouTube](https://www.youtube.com/ViorelMocanu) într-o serie de LIVE-uri în care am vrut să demonstrez cum facem un layout relativ complex, 100% mobile-first și responsive, în HTML și CSS și puțin JavaScript vanilla.
 
