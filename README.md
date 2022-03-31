@@ -46,6 +46,8 @@ Rezultatul e un boilerplate project cu scor 100 în Google PageSpeed Insights:
 └── smaller-favicon.png        # fișier folosit ca favicon static de dimensiuni mici
 ```
 
+## Concluzii
+
 Dacă v-a ajutat proiectul, dați-mi [un subscribe pe YouTube](https://www.youtube.com/ViorelMocanu?sub_confirmation=1) și gândiți-vă la [o donație pe GitHub](https://github.com/sponsors/ViorelMocanu/) sau [pe BuyMeACoffee](https://www.buymeacoffee.com/viorel).
 
 Mulțumesc!
